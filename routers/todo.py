@@ -1,7 +1,7 @@
 from fastapi import APIRouter, HTTPException
 from typing import List
 from schemas.todo import TodoCreate, TodoUpdate, TodoResponse
-from todo import todo_crud
+from crud.todo import todo_crud
 
 router = APIRouter(prefix="/todos", tags=["todos"])
 
